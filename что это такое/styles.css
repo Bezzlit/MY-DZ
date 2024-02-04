@@ -1,0 +1,253 @@
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  background: linear-gradient(180deg, #00ee28 70%, #03310a 100%);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+
+.header {
+  width: 100vw;
+  height: 200px;
+  background: rgb(1, 167, 24);
+  background: linear-gradient(180deg, #157a01 30%, #00ee28 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#title {
+  font-size: 3rem;
+  text-shadow: #00ee28 2px 2px 4px;
+  margin-bottom: -6px;
+  z-index: 100;
+}
+
+
+#description {
+  text-align: center;
+  color: #ffffffcc;
+  font-size: 1.5rem;
+  font-weight: 400;
+  z-index: 50;
+}
+
+
+#description * {
+  color: #05ff2f;
+  font-size: 1.25rem;
+}
+
+
+::placeholder {
+  color: #ffffffd5;
+  opacity: 1;
+}
+ 
+
+dialog {
+  position: fixed;
+  top: 35px;
+  left: auto;
+  border: 0;
+  padding: 8px;
+  height: auto;
+  border-radius: 0px;
+  background: #f5040425;
+  color: #ffffffff;
+  text-align: center;
+}
+
+
+input {
+  font-size: 1rem;
+  padding: 2px 6px;
+  margin: 2px 0;
+  background: #00000025;
+  color: #ffffffd5;
+  border: none;
+  border-radius: 0px;
+}
+
+
+input:focus {
+  background: #00000050;
+  outline: none;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  background: #00000050;
+  transition: 0.25s;
+}
+
+@media screen and (max-width: 800px) {
+  dialog {
+    padding: 6px;
+  }
+  input {
+    font-size: 0.75rem;
+    padding: 1.5px 4px;
+    margin: 1.5px 0;
+  }
+}
+
+
+.code {
+  display: block;
+  margin-bottom: 0px;
+  padding: 20px 1px;
+  background: #ffffff25 !important;
+  border-radius: 0px;
+  overflow: hidden;
+  resize: both;
+  min-height: 40px;
+  line-height: 20px;
+  white-space: pre-wrap;
+  
+}
+
+
+.hidden {
+  display: none!important;
+}
+
+
+@media screen and (max-width: 800px) {
+  .header {
+    height: 96px;
+  }
+
+
+  #title {
+    font-size: 2.5rem;
+    text-shadow: #00000025 1px 1px 2px;
+    margin-bottom: -4px;
+  }
+
+
+  #description {
+    font-size: 1.25rem;
+  }
+
+
+  #description * {
+    font-size: 1rem;
+  }
+
+
+  input {
+    border-radius: 6px;
+  }
+
+}
+
+/* main */
+#search-btn {
+  position: fixed;
+  top: 10px;
+  right: 100px;
+  cursor: pointer;
+}
+
+
+#additional {
+  color: rgb(255, 255, 255);
+  margin: 18px 0 0 18px;
+  text-decoration:solid;
+}
+
+
+#blogs-container {
+  padding: 8px;
+}
+
+
+.blog {
+  margin-bottom: 0px;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.145);
+  border-radius: 0px;
+}
+
+
+.blog-title {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+.blog-description {
+  font-weight: 300;
+  font-size: 1.25rem;
+  margin: 4px 8px;
+}
+
+
+.blog-date {
+  font-weight: 300;
+  color: rgb(8, 238, 0);
+  font-size: 1rem;
+  margin: 8px 0 -4px 0;
+}
+
+
+.blog-delete {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  margin: 16px 0 -16px 4px;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 800px) {
+  .blog {
+    margin-bottom: 8px;
+    padding: 8px;
+  }
+
+
+  .blog-title {
+    font-size: 1.25rem;
+  }
+
+
+  .blog-description {
+    font-size: 1rem;
+    margin: 2px 4px;
+  }
+
+
+  .blog-date {
+    font-size: 0.75rem;
+    margin-top: 4px 0 -2px 0;
+  }
+
+
+  .blog-delete {
+    font-size: 0.5rem;
+    margin: 12px 0 -16px 2px;
+  }
+
+}
+
+/* admin */
+#admin-btn {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+
+
