@@ -234,4 +234,3 @@ window.adminDelBlog = async (blogId) => {
     viewBlog();
   }
 };
-
